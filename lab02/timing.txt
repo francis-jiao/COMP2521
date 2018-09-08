@@ -1,0 +1,24 @@
+Input	Initial	Has	Number	AvgTime	AvgTime
+Size	Order	Dups	of runs	forusel	forsort
+5000	random	no	10	0.076	0.004
+5000	sorted	no	10	0.084	0.004
+5000	reverse	no	10	0.040	0.006
+5000	random	yes	10	0.077	0.004
+5000	sorted	yes	10	0.085	0.005
+5000	reverse	yes	10	0.044	0.004
+10000	random	no	10	0.352	0.010
+10000	sorted	no	10	0.308	0.008
+10000	reverse	no	10	0.152	0.009
+10000	random	yes	10	0.348	0.011
+10000	sorted	yes	10	0.312	0.007
+10000	reverse	yes	10	0.152	0.007
+
+avg time for sort is always quicker than avg time for usel for all conditions because sort command is default in the Lunix and it should be the fastest.
+
+avg time for sort and usel depends on input size, avg time increases as input size increases.
+
+the sorting time for random order, sorted order, reversed order should arrange like this : reverse < random < sorted. This is because when inserting a node to a 
+sorted-order-list, the insert number will compare every single number in the list. However, reverse-order-list only need to compare the insert number with the
+first number in the node which will spend less time. The reason for random order spends less time than sorted and more time than reverse is, when inserting the 
+number to the existing list, the number in the node is not in sequence. this means the number could insert in the middle part of the list but not in the beginning
+ or end of the list.
