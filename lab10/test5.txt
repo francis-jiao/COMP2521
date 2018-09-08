@@ -1,0 +1,12 @@
+Tree:
+   50
+   / \
+  7  600
+ / \
+4  30
+
+#nodes = 5,  #leaves = 3
+Infix  : 4 7 30 50 600 
+Prefix : 50 7 4 30 600 
+Postfix: 4 30 7 600 50 
+ByLevel: 50 7 600 4 30 
